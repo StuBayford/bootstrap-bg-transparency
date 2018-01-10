@@ -1,0 +1,7 @@
+//Import this after the Bootstrap mixin import and before the _background.scss import
+
+@mixin bg-transparency-variant($parent, $color, $level) {
+  #{$parent} {
+    background: rgba($color, $level) !important;
+  }
+}
