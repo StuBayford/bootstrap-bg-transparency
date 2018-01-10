@@ -1,0 +1,10 @@
+
+//Import this file after the Bootstrap imports and after the importing _background-variant.scss
+
+@if $enable-transparency {
+  @each $color, $value in $colors {
+  	@each $transparency, $level in $colors-transparency {
+    	@include bg-transparency-variant(".bg-#{$color}-#{$transparency}", $value, $level);
+    }
+  }
+}
